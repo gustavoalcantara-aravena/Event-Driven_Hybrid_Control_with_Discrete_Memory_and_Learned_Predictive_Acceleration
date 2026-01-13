@@ -1,0 +1,53 @@
+trigger:
+  minimum_inter_event_time: 2
+  hysteresis:
+    enabled: true
+    hysteresis_ratio: 0.8
+  
+  functions:
+    E_error:
+      thresholds:
+        normal:
+          value: 0.1  # Reduced from 0.3 to improve Motor tracking
+        critical:
+          value: 0.05 # Reduced from 0.1
+    E_risk:
+      thresholds:
+        normal:
+          value: 0.8
+        critical:
+          value: 0.4
+
+memory:
+  num_bits: 3
+  bits:
+    bit_0_normal:
+      description: "Normal operating mode"
+      initial: 1
+    bit_1_saturated:
+      description: "Control saturation detected"
+      initial: 0
+    bit_2_critical:
+      description: "Critical constraint risk"
+      initial: 0
+
+transitions:
+  saturation:
+    threshold: 11.5  # Aligned with plant saturation (12.0)
+    consecutive_required: 2 # Faster detection
+  critical:
+    E_risk_threshold: 1.0
+    margin_threshold: -0.1
+  recovery:
+    error_threshold: 0.3
+    time_required: 5
+
+safety:
+  emergency_stop:
+    enabled: false
+  constraint_buffer:
+    margin: 0.1
+
+inspection:
+  log_memory_state: true
+  log_transitions: true

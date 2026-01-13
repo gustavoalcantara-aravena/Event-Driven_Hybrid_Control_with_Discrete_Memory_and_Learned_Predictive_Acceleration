@@ -1,0 +1,2 @@
+2026-01-11 14:05:56,097 - run_proposed - INFO - Starting proposed method experiments: plant=motor, seeds=5, scenarios=10
+2026-01-11 14:08:27,649 - run_proposed - INFO - Combined results saved: results\results_motor_combined.csv

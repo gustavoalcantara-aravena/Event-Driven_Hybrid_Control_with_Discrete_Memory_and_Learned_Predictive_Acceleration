@@ -1,0 +1,5 @@
+Method,Cost (↓),Tracking MSE (↓),Violations (↓),Compute [ms] (↓),Event Rate (↓)
+Proposed,302947.1275 ± nan,5958.7932 ± nan,0.0 ± nan,1.40 ± nan,0.020 ± nan
+B1_PeriodicMPC,331344.7589 ± nan,6543.2473 ± nan,0.0 ± nan,5.44 ± nan,0.000 ± nan
+B2_ClassicEMPC,331078.4336 ± nan,6540.3654 ± nan,0.0 ± nan,38.35 ± nan,1.000 ± nan
+B3_RLnoMemory,584247.1220 ± nan,11640.1880 ± nan,0.0 ± nan,21.46 ± nan,0.000 ± nan

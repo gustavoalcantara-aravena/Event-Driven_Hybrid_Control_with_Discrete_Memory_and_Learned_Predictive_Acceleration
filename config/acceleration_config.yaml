@@ -1,0 +1,19 @@
+
+acceleration:
+  horizon_adaptation:
+    enabled: true
+    N_min: 5
+    N_max: 15
+    N_base: 10
+    
+    scaling_factors:
+      normal: 1.0
+      critical: 0.6
+      saturated: 1.3
+  
+  warmstart:
+    enabled: true
+    strategy: "shift"  # "shift", "lstm_policy", or "zero"
+    
+  computational_budget:
+    max_time_ms: 50.0

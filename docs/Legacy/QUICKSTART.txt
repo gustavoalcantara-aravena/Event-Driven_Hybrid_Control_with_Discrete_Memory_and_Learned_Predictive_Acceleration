@@ -1,0 +1,76 @@
+QUICKSTART GUIDE
+================
+
+1. SETUP INITIAL (5 minutos)
+   ─────────────────────────
+   cd event_driven_hybrid_control
+   python -m venv venv
+   source venv/bin/activate  (Windows: venv\Scripts\activate)
+   pip install -r requirements.txt
+
+2. VERIFICACIÓN RÁPIDA (2 minutos)
+   ────────────────────────────────
+   python test_quick.py
+   
+   Esperado: ✅ ALL TESTS PASSED!
+
+3. EXPLORAR CÓDIGO CORE (10 minutos)
+   ──────────────────────────────────
+   
+   # Plantas simuladas
+   cat src/plants.py | grep -A5 "class MotorDC"
+   
+   # Lógica discreta
+   cat src/discrete_logic.py | grep -A10 "def update"
+   
+   # Triggers
+   cat src/event_trigger.py | grep -A5 "def trigger"
+   
+   # Main loop
+   python -c "from src.controller_hybrid import HybridEventDrivenController; print('✓ Import OK')"
+
+4. ENTENDER LA ESPECIFICACIÓN (30 minutos)
+   ────────────────────────────────────────
+   
+   # Plan completo (20 secciones)
+   less 01_PLAN_EXPERIMENTAL.md
+   
+   # Resumen visual
+   cat TREE.txt | head -100
+   
+   # Guía setup
+   less README.md
+
+5. PRÓXIMAS ACCIONES (Phase 2)
+   ────────────────────────────
+   
+   # Implementar MPC solver
+   cat src/mpc_solver.py  # stub
+   # → Implementar con CasADi
+   
+   # Implementar LSTM
+   cat src/lstm_predictor.py  # stub
+   # → Implementar con PyTorch
+   
+   # Ejecutar experimentos
+   # python experiments/train_lstm.py
+   # python experiments/run_proposed.py
+   # python experiments/evaluate.py
+
+KEY FILES
+═════════
+
+Especificación:    01_PLAN_EXPERIMENTAL.md
+Código:            src/{plants.py, discrete_logic.py, event_trigger.py, metrics.py, controller_hybrid.py}
+Configuración:     config/*.yaml (6 archivos)
+Testing:           test_quick.py
+Documentación:     README.md, IMPLEMENTATION_STATUS.md, INDEX.md
+
+CONTACTS
+════════
+
+Ubicación:  c:\Users\gustavo_windows\Desktop\Event_Driven_Hybrid_Control
+Total:      22 archivos, ~2500 líneas documentación + 2100 líneas código
+Status:     ✅ LISTO PARA PHASE 2
+
+================

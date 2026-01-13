@@ -1,0 +1,42 @@
+# Python dependencies for Event-Driven Hybrid Control
+
+# Core scientific computing
+numpy>=1.24,<2.0
+scipy>=1.10
+pandas>=2.0
+
+# Control systems
+casadi>=3.5.5
+control>=0.9.0
+
+# Machine learning (LSTM)
+torch>=2.0.0,<3.0
+pytorch-lightning>=2.0
+
+# Optimization
+scikit-optimize>=0.9.0
+
+# Visualization
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.0
+
+# Configuration & utilities
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# Testing & validation
+pytest>=7.0
+pytest-cov>=4.0
+
+# Reproducibility & logging
+tensorboard>=2.12
+wandb>=0.15
+
+# Optional: GPU support
+# torch-cuda-runtime>=11.8  # Uncomment if CUDA available
+
+# Development
+black>=23.0
+flake8>=6.0
+mypy>=1.0

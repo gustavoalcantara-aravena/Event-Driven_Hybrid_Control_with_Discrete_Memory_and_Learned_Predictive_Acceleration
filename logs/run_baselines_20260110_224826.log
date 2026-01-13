@@ -1,0 +1,3 @@
+2026-01-10 22:48:26 - run_baselines - INFO - Starting baseline experiments: plant=both, seeds=1, scenarios=1
+2026-01-10 22:48:29 - run_baselines - INFO - Combined baselines saved: results\results_motor_baselines_combined.csv
+2026-01-10 22:48:33 - run_baselines - INFO - Combined baselines saved: results\results_oven_baselines_combined.csv

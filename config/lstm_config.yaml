@@ -1,0 +1,19 @@
+
+lstm:
+  architecture:
+    input_size: 15  # (x[2] + u[1]) * history_length(5)
+    hidden_size: 64
+    num_layers: 2
+    output_size: 2  # state dimension
+    dropout: 0.1
+  
+  training:
+    learning_rate: 0.001
+    batch_size: 32
+    epochs: 100
+    validation_split: 0.2
+  
+  history_length: 5
+  
+  normalization:
+    enabled: true

@@ -1,0 +1,2 @@
+2026-01-10 22:48:50,230 - run_proposed - INFO - Starting proposed method experiments: plant=both, seeds=1, scenarios=1
+2026-01-10 22:49:01,365 - run_proposed - INFO - Combined results saved: results\results_both_combined.csv

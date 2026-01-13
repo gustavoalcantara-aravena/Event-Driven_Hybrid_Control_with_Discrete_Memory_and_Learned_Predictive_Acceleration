@@ -1,0 +1,9 @@
+Plant,Method,Mean CPU (ms),Std CPU (ms),P95 CPU (ms),Max CPU (ms),RT Limit (ms),RT Feasible,Safety Margin (%)
+oven,B1_PeriodicMPC,5.4380,18.2743,62.0718,62.0718,100.0,✓ Yes,37.9%
+oven,B2_ClassicEMPC,38.3459,22.0242,60.3825,60.3825,100.0,✓ Yes,39.6%
+oven,B3_RLnoMemory,21.4580,26.4662,58.1094,58.1094,100.0,✓ Yes,41.9%
+oven,Proposed,1.3991,9.4547,0.0581,0.0581,100.0,✓ Yes,99.9%
+oven,A1_NoMemory,1.5886,10.8585,0.0540,0.0540,100.0,✓ Yes,99.9%
+oven,A2_NoTurbo,1.3229,8.8935,0.0826,0.0826,100.0,✓ Yes,99.9%
+oven,A3_Periodic,41.2256,23.0859,61.6451,61.6451,100.0,✓ Yes,38.4%
+oven,A4_EventMPC,22.3743,28.0051,60.2367,60.2367,100.0,✓ Yes,39.8%

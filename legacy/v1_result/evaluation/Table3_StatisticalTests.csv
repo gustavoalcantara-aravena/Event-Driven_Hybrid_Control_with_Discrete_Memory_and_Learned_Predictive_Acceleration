@@ -1,0 +1,4 @@
+Plant,Comparison,total_cost,tracking_error_mse,num_violations,cpu_time_mean,event_rate
+oven,Proposed vs B1_PeriodicMPC,p=0.0000 ***,p=0.0000 ***,p=1.0000 ns,p=0.0000 ***,p=0.0000 ***
+oven,Proposed vs B2_ClassicEMPC,p=0.0000 ***,p=0.0000 ***,p=1.0000 ns,p=0.0000 ***,p=0.0000 ***
+oven,Proposed vs B3_RLnoMemory,p=0.0000 ***,p=0.0000 ***,p=1.0000 ns,p=0.0000 ***,p=0.0000 ***

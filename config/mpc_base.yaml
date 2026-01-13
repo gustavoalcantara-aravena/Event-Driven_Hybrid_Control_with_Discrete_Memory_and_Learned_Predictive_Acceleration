@@ -1,0 +1,25 @@
+
+mpc:
+  horizon:
+    base: 10
+
+  cost:
+    motor:
+      Q_position: 1.0
+      Q_velocity: 0.1
+      R_control: 0.01
+    even:
+      Q_temperature: 1.0
+      Q_heater: 0.05
+      R_control: 0.01 # oven typo fallback? handled in code as 'oven' usually. I'll put both
+    oven:
+      Q_temperature: 1.0
+      Q_heater: 0.05
+      R_control: 0.01
+
+solver:
+  ipopt:
+    max_iter: 50
+    tolerance: 1e-4
+    constraint_tolerance: 1e-4
+  max_time_ms: 100.0

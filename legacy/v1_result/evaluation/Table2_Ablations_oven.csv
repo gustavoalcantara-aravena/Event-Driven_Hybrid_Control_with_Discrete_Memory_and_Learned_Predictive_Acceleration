@@ -1,0 +1,4 @@
+Variant,Cost,Track Error,Violations,CPU Time [ms],Events
+Proposed,400083.4225,3900.7527,0.0,0.68,1
+A1_NoMemory,400083.4225,3900.7527,0.0,0.57,1
+A4_EventMPC,328864.6825,3211.6435,0.0,12.55,49

@@ -1,0 +1,14 @@
+2026-01-09 10:35:07 - evaluate - INFO - Loaded 3000 total results for motor
+2026-01-09 10:35:08 - evaluate - INFO - ✓ Fig5_Robustness.png
+2026-01-09 10:35:09 - evaluate - INFO - ✓ Fig6_Trajectories.png (Real experimental trajectories)
+2026-01-09 10:35:09 - evaluate - INFO - ✓ Fig7_ParetoFront.png
+2026-01-09 10:35:10 - evaluate - INFO - ✓ Fig10_RadarChart.png
+2026-01-09 10:35:19 - evaluate - INFO - ✓ Table3_StatisticalTests.csv
+2026-01-09 10:35:19 - evaluate - INFO - ✓ Table4_ComputationalBudget.csv
+2026-01-09 10:35:19 - evaluate - INFO - Loaded 3000 total results for oven
+2026-01-09 10:35:20 - evaluate - INFO - ✓ Fig5_Robustness.png
+2026-01-09 10:35:21 - evaluate - INFO - ✓ Fig6_Trajectories.png (Real experimental trajectories)
+2026-01-09 10:35:22 - evaluate - INFO - ✓ Fig7_ParetoFront.png
+2026-01-09 10:35:22 - evaluate - INFO - ✓ Fig10_RadarChart.png
+2026-01-09 10:35:22 - evaluate - INFO - ✓ Table3_StatisticalTests.csv
+2026-01-09 10:35:22 - evaluate - INFO - ✓ Table4_ComputationalBudget.csv

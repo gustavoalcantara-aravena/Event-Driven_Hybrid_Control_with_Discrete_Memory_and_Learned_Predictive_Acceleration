@@ -1,0 +1,36 @@
+
+dynamics:
+  conductance_chamber: 0.1
+  conductance_heater: 0.05
+  temp_scale_heater: 200.0
+
+control:
+  power_min: 0.0
+  power_max: 100.0
+
+sampling:
+  period_s: 0.1
+
+constraints:
+  temperature_min: 0.0
+  temperature_max: 300.0
+
+disturbance:
+  ambient_noise_std: 2.0
+
+reference:
+  values:
+    - time: 0
+      value: 150.0
+
+delays:
+  heater_delay_steps: 5
+
+thermal_model:
+  max_temp_heater: 600.0
+
+initialization:
+  temperature_chamber_nominal: 25.0
+  temperature_heater_nominal: 25.0
+  temperature_chamber_variation: 2.0
+  temperature_heater_variation: 5.0
